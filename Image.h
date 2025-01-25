@@ -14,13 +14,8 @@ struct Color {
 class Image
 {
 public:
-	Image();
-	~Image() {
-		if (m_pixels)
-		{
-			//delete[] m_pixels;
-		}
-	}
+	Image() = default;
+	~Image() = default;
 
 	void create(int width, int height, int bpp) {
 		m_width = width;

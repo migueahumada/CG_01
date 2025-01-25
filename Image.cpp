@@ -38,11 +38,6 @@ struct MY_BITMAPSAVEHEADER {
 };
 
 
-Image::Image()
-{
-}
-
-
 void Image::decode(const char* filename)
 {
 	fstream imgFile(filename, ios::in | ios::binary | ios::ate);
